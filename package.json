@@ -1,5 +1,5 @@
 {
-  "name": "wdio-qatouch-reporter",
+  "name": "sample-wdio-cucumber-qatouch-reporter",
   "version": "1.0.0",
   "description": "A Qa Touch reporter for webdriver.io",
   "main": "index.js",
@@ -15,6 +15,10 @@
     "wdio-plugin",
     "wdio-reporter"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahilanm/sample-cucumber-wdio.git"
+  },
   "author": "Qa Touch",
   "dependencies": {
     "sync-request": "^4.1.0"
