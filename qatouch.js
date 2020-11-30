@@ -18,7 +18,7 @@ class QaTouch {
 
         // compute base url
         this.options = options;
-        this.base = 'http://localhost:8000/api/v1/';
+        this.base = 'https://api.qatouch.com/api/v1/';
     }
 
 
@@ -143,7 +143,7 @@ class QaTouch {
                 'status': value.status_id,
             });
         });
-        this._patch(`testRunResults/status/multiple?project=${this.options.projectKey}&test_run=${this.options.testRunId}&result=${JSON.stringify(result)}`);
+        this._patch(`testRunResults/status/multiple?project=${this.options.projectKey}&test_run=${this.options.testRunId}&result=${JSON.stringify(result)}&comments=Status changed by webdriver.io automation script.`);
     }
 
     /**
